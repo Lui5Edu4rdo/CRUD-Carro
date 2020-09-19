@@ -33,7 +33,7 @@ public class CarroController {
 	@GetMapping("/add")
 	public ModelAndView add(Carro carro) {
 		
-		ModelAndView mv = new ModelAndView("/add_carro");
+		ModelAndView mv = new ModelAndView("add_carro");
 		mv.addObject("carro", carro);
 		
 		return mv;
